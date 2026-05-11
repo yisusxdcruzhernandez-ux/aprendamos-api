@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: aprendamos-api
+    runtime: image
+    image:
+      url: docker.io/library/php:8.2-cli
+    startCommand: php -S 0.0.0.0:$PORT
+    plan: free
